@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import CustomCursor from "./components/CustomCursor";
 import StartScene from "./SplineScene";
 import Home from "./pages/Home";
@@ -7,19 +7,26 @@ import Home from "./pages/Home";
 // import Contact from './pages/Contact';
 
 const App = () => {
+  const location = useLocation();
+  const showCustomCursor = location.pathname !== "/";
+
   return (
-    <Router>
-		<CustomCursor />
-      <div>
-        <Routes>
-          <Route path="/" element={<StartScene />} />
-          <Route path="/home" element={<Home />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
-        </Routes>
-      </div>
-    </Router>
+    <>
+      {showCustomCursor && <CustomCursor />}
+      <Routes>
+        <Route path="/" element={<StartScene />} />
+        <Route path="/home" element={<Home />} />
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </>
   );
 };
 
-export default App;
+const AppWrapper = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWrapper;

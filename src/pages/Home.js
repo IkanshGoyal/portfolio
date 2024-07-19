@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../App.css';
 import Projects from './Projects';
-import Achievements from './Achievements';
+import Certifications from './Achievements';
 import Skills from './Skills';
 import About from './About';
 import Contact from './Contact';
@@ -106,7 +106,7 @@ const Home = () => {
 					<div className={`menu-items ${menuClosing ? 'close' : ''}`}>
 						<div onClick={() => openOverlay(null)}>Home</div>
 						<div onClick={() => openOverlay(<Projects />)}>Projects</div>
-						<div onClick={() => openOverlay(<Achievements />)}>Achievements</div>
+						<div onClick={() => openOverlay(<Certifications />)}>Certifications</div>
 						<div onClick={() => openOverlay(<Skills />)}>Skills</div>
 						<div onClick={() => openOverlay(<About />)}>About</div>
 						<div onClick={() => openOverlay(<Contact />)}>Contact</div>
