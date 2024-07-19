@@ -82,7 +82,7 @@ const Home = () => {
 				title="3D Portfolio Landing Page"
 				width="100%"
 				height="100%"
-				style={{ position: 'absolute', top: 0, left: 0, zIndex: 0 }}
+				style={{ position: 'absolute', top: 0, left: 0, zIndex: 0, overflow: 'hidden' }}
 			></iframe>
 			<div className="navbar">
 				<div className="name" onClick={closeOverlay}>Ikansh Goyal</div>

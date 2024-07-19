@@ -7,7 +7,7 @@ const projects = [
         image: `${process.env.PUBLIC_URL}/hackerrank.png`
     },
     {
-        name: 'Coursera Web Development Certification',
+        name: 'Coursera Web Dev Certification',
         link: 'https://coursera.org/share/291d437b5ee1771947c7ca7a9fb1c6cd',
         image: `${process.env.PUBLIC_URL}/webres.png`
     },
@@ -27,7 +27,7 @@ const projects = [
         image: `${process.env.PUBLIC_URL}/python.png`
     },
     {
-        name: 'FreeCodeCamp Web Development Certification',
+        name: 'FreeCodeCamp Web Dev Certification',
         link: 'https://www.freecodecamp.org/Ikansh',
         image: `${process.env.PUBLIC_URL}/webdev.png`
     },

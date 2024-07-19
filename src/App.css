@@ -33,7 +33,7 @@ html,
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
-	width: 100%;
+	width: 100lvw;
 	height: 50px;
 	z-index: 1000;
 }
@@ -41,6 +41,7 @@ html,
 .name {
 	font-family: SignPainter;
 	padding: 0px 25px;
+	padding-top: 5px;
 	font-size: 2rem;
 	font-weight: 800;
 	letter-spacing: 1.2px;
@@ -644,8 +645,139 @@ input::placeholder, textarea::placeholder {
 } */
 
 @media (max-width: 480px) {
-    .spline-container {
-        transform: scale(0.6); /* Further adjust for very small screens */
-        transform-origin: top left;
-    }
+	.navbar {
+		padding: 20px 0;
+		padding-top: 10px;
+	}
+
+	.name {
+		font-size: 1.5rem;
+	}
+
+	.menu-icon {
+		margin-right: 0;
+		padding-right: 0;
+		width: 50px;
+	}
+
+	.role {
+		top: 45%;
+		left: 10%;
+		font-size: 1.2rem;
+	}
+
+    .options {
+		width: 350px;
+		height: 150px;
+		top: 50%;
+		left: 10%;
+		gap: 10px;
+	}
+
+	.option, .cover {
+		font-size: 1.2rem;
+		margin-right: 20px;
+	}
+
+	.menu-items {
+		margin-left: 10%;
+		margin-bottom: 10%;
+	}
+
+	.menu-items div {
+		font-size: 2rem;
+	}
+
+	.project-image {
+		display: none;
+	}
+
+	.projects-title {
+		font-size: 2rem;
+	}
+
+	.divider1, .divider {
+		width: calc(100lvw - 60px);
+	}
+
+	.divider {
+		margin-bottom: 0;
+	}
+
+	.project-list {
+		left: 2.5%;
+		margin-top: 60px;
+	}
+
+	.project-item {
+		font-size: 1.1rem;
+	}
+
+	.side1 {
+		padding-top: 100px;
+		width: 90lvw;
+		gap: 0px;
+	}
+
+	.about-title {
+		font-size: 2rem;
+	}
+
+	.about-description {
+		padding-top: 0px;
+	}
+
+	.icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	.profile-pic {
+		display: none;
+	}
+
+	.contact-container, .skills-container {
+		width: 90lvw;
+		height: 100lvh;
+		padding: 20px;
+		margin: 0;
+		padding-top: 100px;
+	}
+
+	.contact-title {
+		font-size: 2rem;
+	}
+
+	.contact-description {
+		font-size: 1.2rem;
+	}
+
+	.contact-form {
+		padding-top: 20px;
+	}
+
+	.contact-form input,
+	.contact-form textarea {
+		font-size: 1.2rem;
+	}
+
+	.contact-form button {
+		font-size: 1.2rem;
+	}
+
+	.skills-container {
+		height: 85lvh;
+	}
+
+	.skill-title {
+		text-align: center;
+		font-size: 1.5rem;
+		position: relative;
+		margin: auto;
+		padding-bottom: 40px;
+	}
+
+	.skill {
+		font-size: 1.2rem;
+	}
 }
