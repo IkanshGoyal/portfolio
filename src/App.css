@@ -579,6 +579,10 @@ input::placeholder, textarea::placeholder {
 	font-size: 1rem;
 }
 
+body.hide-cover .cover {
+    display: none;
+}
+
 
 
 @keyframes animate {
@@ -645,6 +649,10 @@ input::placeholder, textarea::placeholder {
 } */
 
 @media (max-width: 480px) {
+	.cover {
+		z-index: 5;
+	}
+
 	.navbar {
 		padding: 20px 0;
 		padding-top: 10px;
