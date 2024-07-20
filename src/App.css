@@ -28,6 +28,14 @@ html,
 	overflow: hidden;
 }
 
+.tohide {
+  	display: none;
+}
+
+body.start-scene .tohide {
+  	display: block;
+}
+
 .navbar {
 	position: fixed;
 	display: flex;
