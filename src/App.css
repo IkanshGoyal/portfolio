@@ -127,7 +127,7 @@ html,
 	height: 40px;
 	width: 140px;
 	border-radius: 8px;
-	z-index: 5;
+	z-index: 0;
 }
 
 .resume {
