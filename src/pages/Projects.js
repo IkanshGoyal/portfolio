@@ -63,7 +63,7 @@ const projects = [
     },
     {
         name: 'Revamped Personal Portfolio',
-        link: 'https://github.com/IkanshGoyal/portfolio',
+        link: 'https://ikanshgoyal.vercel.app/',
         image: `${process.env.PUBLIC_URL}/pp.png`
     }
 ];
