@@ -11,7 +11,7 @@ const StartScene = () => {
             height='100%'
             style={{ position: 'absolute', top: 0, left: 0, zIndex: 0 }}>
             </iframe>
-            <div class='cover'></div>
+            <div class='cover tohide'></div>
             </>
   );
 };
